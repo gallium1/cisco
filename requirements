@@ -1,0 +1,11 @@
+collections:
+  - name: cisco.ios
+  - name: cisco.nxos
+  - name: arista.eos
+  - name: junipernetworks.junos
+  - name: cisco.iosxr
+  - name: fortinet.fortios
+  - name: cisco.asa
+  - name: cisco.aci
+  - name: paloaltonetworks.panos
+  - name: check_point.mgmt
