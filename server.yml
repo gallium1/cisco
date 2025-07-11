@@ -3,5 +3,9 @@
    become: true
    tasks:
     - name: Print OS release
-      ansible.builtin.command:
-        name: apache2
+      ansible.builtin.file:
+        name: /home/server_repo
+        state: directory
+        owner: root
+        group: root
+        mode: '0755'
