@@ -1,0 +1,13 @@
+---
+ - name: cisco routers config
+   hosts: router
+#   become: true
+   gather_facts: no
+
+   tasks:
+     - name: Set login banner
+       cisco.ios.ios_config:
+          banner: login
+          text: |
+            Unauthorized access is prohibited.
+         # state: present
