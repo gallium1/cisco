@@ -3,5 +3,5 @@
    become: true
    tasks:
     - name: Print OS release
-      ansible.builtin.command
+      ansible.builtin.command:
         name: apache2
