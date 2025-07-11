@@ -1,0 +1,14 @@
+---
+ - name: Run show command on Cisco Router
+   hosts: router
+   gather_facts: no
+   tasks:
+     - name: Run show version
+       cisco.ios.ios_command:
+         commands:
+           - show interfaces summary
+       register: show_output
+
+     - name: Display output
+       debug:
+         var: show_output.stdout_lines
