@@ -2,14 +2,14 @@
 - name: Show running config on NX-OS device
   hosts: nxos
   gather_facts: no
+  
   tasks:
-
     - name: Run show running-config
       cisco.nxos.nxos_command:
-        commands:
+         commands:
           - show running-config
       register: show_run_output
 
     - name: Display output
       debug:
-        var: show_run_output.stdout_lines
+         var: show_run_output.stdout_lines
