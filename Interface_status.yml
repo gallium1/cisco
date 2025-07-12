@@ -5,8 +5,7 @@
    tasks:
      - name: Run show version
        cisco.ios.ios_command:
-          commands:
-            - show interfaces summary
+          commands: show interfaces summary
        register: show_output
 
      - name: Display output
