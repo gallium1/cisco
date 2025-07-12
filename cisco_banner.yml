@@ -7,7 +7,7 @@
    tasks:
      - name: Set login banner
        cisco.ios.ios_config:
-          banner: login
-          text: |
-            Unauthorized access is prohibited.
+         banner: login
+         text: |
+           Unauthorized access is prohibited.
          # state: present 
