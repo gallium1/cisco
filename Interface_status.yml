@@ -2,6 +2,7 @@
  - name: Run show command on Cisco Router
    hosts: router
    gather_facts: no
+   connection: network_cli
    tasks:
      - name: Run show version
        cisco.ios.ios_command:
