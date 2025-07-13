@@ -3,6 +3,12 @@
    hosts: router
    gather_facts: no
    connection: network_cli
+   vars:
+     ansible_user: cisco
+     ansible_password: cisco
+     ansible_network_os: cisco.ios.ios
+     ansible_connection: network_cli
+    
    tasks:
      - name: Run show version
        cisco.ios.ios_command:
